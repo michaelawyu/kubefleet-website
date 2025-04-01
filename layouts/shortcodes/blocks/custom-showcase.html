@@ -1,0 +1,35 @@
+{{ $col_id := .Get "color" | default .Ordinal -}}
+{{ $height := .Get "height" | default "auto" -}}
+
+{{ with .Get "height" -}}
+  {{ if not ( or ( eq . "auto" ) ( eq . "min" ) ( eq . "med" ) ( eq . "max" ) ( eq . "full" ) ) -}}
+    {{ errorf "shortcode 'lead': parameter height is %q, must be one of 'auto', 'min', 'med', 'max' or 'full'." . -}}
+  {{ end -}}
+{{ end -}}
+
+<div><a id="td-block-{{ .Ordinal }}" class="td-offset-anchor"></a></div>
+<section class="row td-box td-box-white position-relative td-box--height-{{ $height }}">
+<div class="col-12">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-lg-7 align-self-center">
+        <div id="demo"></div>
+        <script src="asciinema/asciinema-player.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="asciinema/asciinema-player.css" />
+        <script>
+          AsciinemaPlayer.create(
+            'asciinema/demo.cast',
+            document.getElementById('demo'),
+            { 
+              preload: true,
+            },
+          );
+        </script>
+      </div>
+      <div class="col-lg-5 text-right align-self-center">
+        <h3 class="text-dark lh-sm">{{ .Inner }}</h3> 
+      </div>
+    </div>
+</div>
+</section>
+{{/**/ -}}
