@@ -38,7 +38,7 @@ with the help of KubeFleet, one is able to easily:
 
 * 🚀 KubeFleet is evolving fast.
 
-    We are actively developing new features and functionalities for KubeFleet. If you have any questions, suggestions, or feedbacks, please [let us know](https://github.com/azure/fleet/issues).
+    We are actively developing new features and functionalities for KubeFleet. If you have any questions, suggestions, or feedbacks, please [let us know](https://github.com/kubefleet-dev/kubefleet/issues).
 
 ## Get started
 

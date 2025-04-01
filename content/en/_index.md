@@ -5,10 +5,10 @@ title: KubeFleet
 {{< blocks/custom-cover covertitle="Managing Kubernetes Clusters" coversubtitle="Seamlessly. At scale." image_anchor="top" height="full" >}}
 <p class="h5">KubeFleet is a CNCF sandbox project for easily managing your Kubernetes multi-cluster setup.</p>
 <br>
-<a class="btn btn-lg btn-dark me-3 mb-4" href="/docs/">
+<a class="btn btn-lg btn-dark me-3 mb-4" href="/website/docs/">
   Documentation <i class="fas fa-arrow-alt-circle-right ms-2"></i>
 </a>
-<a class="btn btn-lg btn-secondary me-3 mb-4" href="https://github.com/azure/fleet">
+<a class="btn btn-lg btn-secondary me-3 mb-4" href="https://github.com/kubefleet-dev/kubefleet">
   Source Code <i class="fab fa-github ms-2 "></i>
 </a>
 <p class="lead mt-5"></p>
