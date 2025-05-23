@@ -1,7 +1,7 @@
 ---
 title: CRP Drift Detection and Configuration Difference Check Unexpected Result TSG
 description: Troubleshoot situations where CRP drift detection and configuration difference check features are returning unexpected results
-weight: 11
+weight: 8
 ---
 
 This document helps you troubleshoot unexpected drift and configuration difference

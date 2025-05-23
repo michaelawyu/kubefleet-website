@@ -1,7 +1,7 @@
 ---
 title: CRP Diff Reporting Failure TSG
 description: Troubleshoot failures in the CRP diff reporting process
-weight: 8
+weight: 9
 ---
 
 This document helps you troubleshoot diff reporting failures when using the KubeFleet CRP API,
