@@ -2148,7 +2148,7 @@ _Appears in:_
 | Field | Description | Default | Validation |
 | --- | --- | --- | --- |
 | `type` _[StageTaskType](#stagetasktype)_ | The type of the before or after stage task. |  | Enum: [TimedWait Approval] <br />Required: \{\} <br /> |
-| `waitTime` _[Duration](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.31/#duration-v1-meta)_ | The time to wait after all the clusters in the current stage complete the update before moving to the next stage. |  | Optional: \{\} <br />Pattern: `^0\|([0-9]+(\.[0-9]+)?(s\|m\|h))+$` <br />Type: string <br /> |
+| `waitTime` _[Duration](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.31/#duration-v1-meta)_ | The time to wait after all the clusters in the current stage complete the update before moving to the next stage.<br />Only hours (h), minutes (m), and seconds (s) units are accepted. |  | Optional: \{\} <br />Pattern: `^(?:(?:0\|[1-9][0-9]*)(\.[0-9]+)?(?:s\|m\|h))+$` <br />Type: string <br /> |
 
 
 
